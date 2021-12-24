@@ -29,7 +29,7 @@ export function updateDependency({
   upgrade,
 }: UpdateDependencyConfig): string | null {
   if (upgrade.updateType === 'replacement') {
-    logger.warn('gomod manager does not support replacement updates yet');
+    logger.warn('maven manager does not support replacement updates yet');
     return null;
   }
   const offset = fileContent.indexOf('<');

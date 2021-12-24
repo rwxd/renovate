@@ -9,7 +9,7 @@ export function updateDependency({
 }: UpdateDependencyConfig<GradleManagerData>): string | null {
   const { depName, currentValue, newValue, managerData, updateType } = upgrade;
   if (updateType === 'replacement') {
-    logger.warn('maven manager does not support replacement updates yet');
+    logger.warn('gradle manager does not support replacement updates yet');
     return null;
   }
   const offset = managerData.fileReplacePosition;
